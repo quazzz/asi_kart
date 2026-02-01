@@ -1,4 +1,4 @@
-<h1 align="center">🏎️ Super Kart Racing — Lava Edition</h1>
+<h1 align="center">🏎️ ASI KART</h1>
 
 <p align="center">
   <strong>Arcade top-down kart racing game built with Python &amp; Pygame</strong><br>
@@ -115,5 +115,5 @@
 
 <p align="center">
   Built with ❤️ using Python &amp; Pygame<br>
-  <strong>Super Kart Racing — Lava Edition</strong>
+  <strong>ASI KART</strong>
 </p>
