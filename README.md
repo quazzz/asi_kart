@@ -1,185 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Super Kart Racing — Lava Edition</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: linear-gradient(135deg, #0f0f0f, #1b1b1b);
-            color: #f0f0f0;
-            line-height: 1.6;
-        }
+<h1 align="center">🏎️ Super Kart Racing — Lava Edition</h1>
 
-        header {
-            background: linear-gradient(90deg, #b00000, #ff5500);
-            padding: 40px;
-            text-align: center;
-        }
+<p align="center">
+  <strong>Arcade top-down kart racing game built with Python &amp; Pygame</strong><br>
+  <em>Race fast. Dodge lava. Win.</em>
+</p>
 
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-            letter-spacing: 2px;
-        }
+<hr>
 
-        header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
+<h2>✨ Features</h2>
+<ul>
+  <li>Player vs AI kart racing</li>
+  <li>Lava 🔥 and water 💧 hazards</li>
+  <li>Grass slowdown &amp; off-road penalties</li>
+  <li>Checkpoints, laps, positions &amp; finish times</li>
+  <li>Results overlay after finishing</li>
+</ul>
 
-        section {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+<hr>
 
-        h2 {
-            color: #ff8800;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
+<h2>🛠 Requirements</h2>
+<ul>
+  <li>Python 3.8 or newer</li>
+  <li>Pygame</li>
+</ul>
 
-        .card {
-            background: #1f1f1f;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-        }
+<p>Install Pygame:</p>
 
-        ul {
-            padding-left: 20px;
-        }
+<pre><code>pip install pygame</code></pre>
 
-        li {
-            margin: 6px 0;
-        }
+<hr>
 
-        code {
-            background: #111;
-            padding: 4px 8px;
-            border-radius: 6px;
-            color: #00ff99;
-        }
+<h2>▶️ How to Run</h2>
+<ol>
+  <li>Save the game code as <code>main.py</code></li>
+  <li>Open a terminal in the project folder</li>
+  <li>Run the game:</li>
+</ol>
 
-        .controls-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
+<pre><code>python main.py</code></pre>
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #aaa;
-            font-size: 0.9em;
-        }
+<hr>
 
-        .highlight {
-            color: #ffd700;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
+<h2>🎮 Controls</h2>
 
-<header>
-    <h1>SUPER KART RACING</h1>
-    <p>Lava Edition 🔥 — Arcade Top-Down Racing</p>
-</header>
+<table>
+  <tr>
+    <th align="left">Action</th>
+    <th align="left">Key</th>
+  </tr>
+  <tr>
+    <td>Accelerate</td>
+    <td>W / ↑</td>
+  </tr>
+  <tr>
+    <td>Brake / Reverse</td>
+    <td>S / ↓</td>
+  </tr>
+  <tr>
+    <td>Turn Left</td>
+    <td>A / ←</td>
+  </tr>
+  <tr>
+    <td>Turn Right</td>
+    <td>D / →</td>
+  </tr>
+  <tr>
+    <td>Start Race</td>
+    <td>SPACE</td>
+  </tr>
+  <tr>
+    <td>Restart Race</td>
+    <td>R</td>
+  </tr>
+  <tr>
+    <td>Restart After Finish</td>
+    <td>SPACE</td>
+  </tr>
+</table>
 
-<section>
-    <div class="card">
-        <h2>🏎️ About the Game</h2>
-        <p>
-            <strong>Super Kart Racing — Lava Edition</strong> is a fast-paced top-down
-            kart racing game built with <span class="highlight">Python</span> and
-            <span class="highlight">Pygame</span>.
-        </p>
-        <p>
-            Race against AI opponents, survive lava hazards, master corners,
-            and fight for <strong>1st place</strong> across multiple laps.
-        </p>
-    </div>
+<hr>
 
-    <div class="card">
-        <h2>✨ Features</h2>
-        <ul>
-            <li>Player vs AI kart racing</li>
-            <li>Smooth arcade driving physics</li>
-            <li>Grass slowdown & off-road penalties</li>
-            <li>Lava & water hazards with respawn system</li>
-            <li>Lap counting, checkpoints, and race positions</li>
-            <li>Live results overlay after finishing</li>
-        </ul>
-    </div>
+<h2>🏁 Gameplay</h2>
+<ul>
+  <li>Complete <strong>3 laps</strong> to finish the race</li>
+  <li>Driving on grass heavily reduces speed</li>
+  <li>Touching lava or water causes instant respawn</li>
+  <li>Respawn places you at the last checkpoint</li>
+  <li>Finish order is determined by total race time</li>
+</ul>
 
-    <div class="card">
-        <h2>🛠 Requirements</h2>
-        <ul>
-            <li>Python 3.8 or newer</li>
-            <li>Pygame</li>
-        </ul>
-        <p>Install Pygame:</p>
-        <code>pip install pygame</code>
-    </div>
+<hr>
 
-    <div class="card">
-        <h2>▶️ How to Run</h2>
-        <ol>
-            <li>Save the game code as <code>main.py</code></li>
-            <li>Open a terminal in the project folder</li>
-            <li>Run:</li>
-        </ol>
-        <code>python main.py</code>
-    </div>
+<h2>📦 Build Windows EXE</h2>
 
-    <div class="card">
-        <h2>🎮 Controls</h2>
-        <div class="controls-grid">
-            <div>
-                <h3>Menu</h3>
-                <ul>
-                    <li><code>SPACE</code> — Start race</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Driving</h3>
-                <ul>
-                    <li><code>W / ↑</code> — Accelerate</li>
-                    <li><code>S / ↓</code> — Brake / Reverse</li>
-                    <li><code>A / ←</code> — Turn left</li>
-                    <li><code>D / →</code> — Turn right</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Race</h3>
-                <ul>
-                    <li><code>R</code> — Restart race</li>
-                    <li><code>SPACE</code> — Restart after finishing</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<p>Install PyInstaller:</p>
+<pre><code>pip install pyinstaller</code></pre>
 
-    <div class="card">
-        <h2>🏁 Gameplay Rules</h2>
-        <ul>
-            <li>Complete <strong>3 laps</strong> to finish the race</li>
-            <li>Grass heavily reduces speed</li>
-            <li>Lava & water cause instant respawn</li>
-            <li>Respawn sends you to the last checkpoint</li>
-            <li>Finishing order is based on total race time</li>
-        </ul>
-    </div>
-</section>
+<p>Build the executable:</p>
+<pre><code>pyinstaller --onefile --windowed main.py</code></pre>
 
-<footer>
-    Built with ❤️ using Python & Pygame<br>
-    Super Kart Racing — Lava Edition
-</footer>
+<p>The final executable will be located in:</p>
+<pre><code>dist/main.exe</code></pre>
 
-</body>
-</html>
+<hr>
+
+<h2>🚀 Tips</h2>
+<ul>
+  <li>Slow down before sharp turns for better control</li>
+  <li>Watch AI racing lines to find faster paths</li>
+  <li>Lava hazards are placed on the racing line — stay alert</li>
+</ul>
+
+<hr>
+
+<p align="center">
+  Built with ❤️ using Python &amp; Pygame<br>
+  <strong>Super Kart Racing — Lava Edition</strong>
+</p>
